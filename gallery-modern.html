@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>फोटो गॅलरी - KDGB Vidhyavriddhi Samaj</title>
+  
+  <meta name="description" content="कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाज - फोटो गॅलरी">
+  <meta name="keywords" content="KDGB, फोटो गॅलरी, कार्यक्रम, विद्यावृद्धि समाज">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    .gallery-section {
+      padding: 30px 0;
+    }
+    
+    .gallery-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .gallery-header h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    .gallery-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .gallery-link {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-color);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+    }
+    
+    .gallery-link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .gallery-link h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    
+    .gallery-thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    
+    .special-events {
+      background: #e8f5e8;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .special-events h2 {
+      color: #28a745;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .video-section {
+      background: #fff3cd;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .video-section h2 {
+      color: #856404;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .video-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .video-link {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      border-left: 4px solid #ffc107;
+      transition: all 0.3s;
+    }
+    
+    .video-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .video-link h3 {
+      color: #856404;
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .gallery-links {
+        grid-template-columns: 1fr;
+      }
+      
+      .gallery-header h1 {
+        font-size: 2em;
+      }
+      
+      .gallery-card {
+        padding: 20px;
+      }
+      
+      .video-links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div class="container">
+      <img src="banner/banner.jpg" alt="KDGB Banner" class="banner">
+      
+      <section class="founders-section">
+        <div class="founders-grid">
+          <div class="founder">कै.रावसाहेब गणेश रघुनाथ पाटकर</div>
+          <div class="founder">कै.पाडुरंग भिकाजी उर्फ तात्यासाहेब नाईक</div>
+          <div class="founder">कै. विठ्ठल तात्या देसाई</div>
+          <div class="founder">कै. पुरुषोत्तम पांडुरंग वाघ</div>
+        </div>
+        <p class="founder-note">टीप: संस्थापक व आद्य चिटणीस कै.अनंतराव सीताराम देसाई यांचे छायाचित्र उपलब्ध नाही.</p>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-card">
+          <div class="gallery-header">
+            <h1>फोटो गॅलरी</h1>
+            <p>संस्थेच्या कार्यक्रमांच्या फोटो</p>
+          </div>
+          
+          <div class="special-events">
+            <h2>विशेष कार्यक्रम</h2>
+            <div style="text-align: center;">
+              <a href="UberGallery-v2.4.8/index.php" class="gallery-link" style="display: inline-block; max-width: 400px;">
+                <img src="im_3.jpg" alt="शतकोत्तर रौप्य महोत्सव" class="gallery-thumbnail">
+                <h3>शतकोत्तर रौप्य महोत्सव</h3>
+                <p>संस्थेच्या १२५व्या वर्धापनदिनाच्या उत्सवाचे फोटो</p>
+              </a>
+            </div>
+          </div>
+          
+          <div class="gallery-links">
+            <a href="jFlowTutorial/index.htm" class="gallery-link">
+              <img src="jFlowTutorial/images/1.jpg" alt="कार्यक्रम फोटो" class="gallery-thumbnail">
+              <h3>पारितोषिक वितरण समारंभ</h3>
+              <p>मेधावी विद्यार्थ्यांना पारितोषिक वितरण कार्यक्रम</p>
+            </a>
+            
+            <a href="jFlowTutorial1/index.htm" class="gallery-link">
+              <img src="jFlowTutorial1/images/1.jpg" alt="कार्यक्रम फोटो" class="gallery-thumbnail">
+              <h3>वार्षिक सभा</h3>
+              <p>संस्थेच्या वार्षिक सभेचे फोटो</p>
+            </a>
+            
+            <a href="jFlowTutorial4/index.htm" class="gallery-link">
+              <img src="jFlowTutorial4/images/1.jpg" alt="कार्यक्रम फोटो" class="gallery-thumbnail">
+              <h3>सांस्कृतिक कार्यक्रम</h3>
+              <p>संस्थेच्या सांस्कृतिक कार्यक्रमांचे फोटो</p>
+            </a>
+            
+            <a href="jFlowTutorial5/index.htm" class="gallery-link">
+              <img src="jFlowTutorial5/images/7.JPG" alt="कार्यक्रम फोटो" class="gallery-thumbnail">
+              <h3>समुदायिक कार्यक्रम</h3>
+              <p>समुदायाच्या विविध कार्यक्रमांचे फोटो</p>
+            </a>
+            
+            <a href="jFlowTutorial6/index.htm" class="gallery-link">
+              <img src="jFlowTutorial6/images/1.jpg" alt="कार्यक्रम फोटो" class="gallery-thumbnail">
+              <h3>शैक्षणिक कार्यक्रम</h3>
+              <p>शिक्षण संबंधित कार्यक्रमांचे फोटो</p>
+            </a>
+          </div>
+          
+          <div class="video-section">
+            <h2>व्हिडिओ गॅलरी</h2>
+            <div class="video-links">
+              <a href="https://www.youtube.com/watch?time_continue=247&v=zVN3g0K4IQM" target="_blank" class="video-link">
+                <h3>KDGB Viddhyavridhi Samaj 125th year Function - Part 1</h3>
+                <p>शतकोत्तर रौप्य महोत्सव - भाग १</p>
+              </a>
+              
+              <a href="https://www.youtube.com/watch?v=WMxBOF6WwbY" target="_blank" class="video-link">
+                <h3>KDGB Viddhyavridhi Samaj 125th year Function - Part 2</h3>
+                <p>शतकोत्तर रौप्य महोत्सव - भाग २</p>
+              </a>
+              
+              <a href="https://youtu.be/C1-_j5EoAMc" target="_blank" class="video-link">
+                <h3>KDGB Viddhyavridhi Samaj 125th year Function - Part 3</h3>
+                <p>शतकोत्तर रौप्य महोत्सव - भाग ३</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2025 <strong>KDGB Vidhyavriddhi Samaj</strong> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

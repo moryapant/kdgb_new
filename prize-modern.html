@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>पारितोषिक - KDGB Vidhyavriddhi Samaj</title>
+
+  <meta name="description" content="कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाज - पारितोषिक माहिती">
+  <meta name="keywords" content="KDGB, पारितोषिक, विद्यार्थी, विद्यावृद्धि समाज">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    .prize-section {
+      padding: 30px 0;
+    }
+
+    .prize-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .prize-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .prize-header h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .prize-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .category-item {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    .category-item h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .prize-amount {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+
+    .eligibility-section {
+      background: #e8f5e8;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .eligibility-section h2 {
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    .application-info {
+      background: #fff3cd;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #ffc107;
+      margin-bottom: 30px;
+    }
+
+    .application-info h3 {
+      color: #856404;
+      margin-bottom: 15px;
+    }
+
+    .important-dates {
+      background: #f8d7da;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #dc3545;
+      margin-bottom: 30px;
+    }
+
+    .important-dates h3 {
+      color: #721c24;
+      margin-bottom: 15px;
+    }
+
+    /* Table container for mobile responsiveness */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+
+    .table-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .table-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb:hover {
+      background: #e5750b;
+    }
+
+    @media (max-width: 768px) {
+      .prize-categories {
+        grid-template-columns: 1fr;
+      }
+
+      .prize-header h1 {
+        font-size: 2em;
+      }
+
+      .prize-card {
+        padding: 20px;
+      }
+
+      /* Mobile table adjustments */
+      .table-container table {
+        font-size: 12px;
+      }
+
+      .table-container th,
+      .table-container td {
+        padding: 8px !important;
+        min-width: 120px;
+      }
+
+      .table-container th:first-child,
+      .table-container td:first-child {
+        min-width: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .table-container table {
+        font-size: 11px;
+      }
+
+      .table-container th,
+      .table-container td {
+        padding: 6px !important;
+        min-width: 100px;
+      }
+
+      .table-container th:first-child,
+      .table-container td:first-child {
+        min-width: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div class="container">
+      <img src="banner/banner.jpg" alt="KDGB Banner" class="banner">
+
+      <section class="founders-section">
+        <div class="founders-grid">
+          <div class="founder">कै.रावसाहेब गणेश रघुनाथ पाटकर</div>
+          <div class="founder">कै.पाडुरंग भिकाजी उर्फ तात्यासाहेब नाईक</div>
+          <div class="founder">कै. विठ्ठल तात्या देसाई</div>
+          <div class="founder">कै. पुरुषोत्तम पांडुरंग वाघ</div>
+        </div>
+        <p class="founder-note">टीप: संस्थापक व आद्य चिटणीस कै.अनंतराव सीताराम देसाई यांचे छायाचित्र उपलब्ध नाही.</p>
+      </section>
+
+      <section class="prize-section">
+        <div class="prize-card">
+          <div class="prize-header">
+            <h1>पारितोषिके</h1>
+            <p>विविध परीक्षांत गुणवत्तेसह उत्तीर्ण झालेल्या आपल्या ज्ञातीतील गुणवंत विद्यार्थ्यांस पारितोषिके देऊन
+              त्यांचे कौतुक करण्याचा समारंभ - "कौतुक सोहळा" - प्रतिवर्षी संस्थेतर्फे आयोजित करण्यात येतो (२ ऑक्टोबर)</p>
+          </div>
+
+          <div class="important-dates">
+            <h3>महत्वाची माहिती</h3>
+            <p><strong>कौतुक सोहळा:</strong> २ ऑक्टोबर (दरवर्षी)</p>
+            <p><strong>अर्जाची शेवटची तारीख:</strong> ३१ ऑगस्ट</p>
+            <p>समाजातील दात्यांनी पारितोषिक फंडास दिलेल्या देणग्यांच्या व्याजातून पारितोषिके देण्यात येतात तसेच शालांत व
+              उच्चमाध्यमिक परीक्षेत ठराविक टक्यांच्यावर गुण मिळवणाऱ्या विध्यार्थ्यास "समाज पारितोषिके" देण्यात येतात.
+            </p>
+          </div>
+
+          <div class="eligibility-section">
+            <h2>पारितोषिकांसाठी आवश्यक गुणांची टक्केवारी</h2>
+            <div class="table-container">
+              <table style="width: 100%; border-collapse: collapse; margin: 20px 0; min-width: 600px;">
+                <thead>
+                  <tr style="background-color: var(--primary-color); color: white;">
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">परीक्षा</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">महानगरपालिका क्षेत्रातील
+                      विद्यार्थ्यांसाठी</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">अन्य क्षेत्रातील
+                      विद्यार्थ्यांसाठी</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border: 1px solid #ddd; padding: 12px;">शालांत (S.S.C)</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">८८%</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">८३%</td>
+                  </tr>
+                  <tr style="background-color: #f8f9fa;">
+                    <td style="border: 1px solid #ddd; padding: 12px;">उच्च माध्यमिक (शास्त्र)</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">८०%</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">७५%</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px solid #ddd; padding: 12px;">उच्च माध्यमिक (कला व वाणिज्य)</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">७५%</td>
+                    <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">७०%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="prize-categories">
+            <h2>पारितोषिकांच्या श्रेणी</h2>
+
+            <div class="category-item">
+              <h3>१) शालांत परीक्षा (S.S.C)</h3>
+              <p>प्रथम, दुसरा आणि तिसरा क्रमांक, मुंबई आणि पुणे बोर्ड वगळता प्रथम, दुसरा आणि तिसरा क्रमांक</p>
+            </div>
+
+            <div class="category-item">
+              <h3>२) शालांत परीक्षा (S.S.C) - विशिष्ट क्षेत्रे</h3>
+              <p><strong>मुंबई विभाग, कोकण विभाग, ठाणे, रत्नागिरी, सिंधुदुर्ग जिल्हे, वसई, कुडाळ, सावंतवाडी तालुके,
+                  मालवण केंद्र, परुळे गाव, डोंबिवली, अंधेरी</strong></p>
+              <p><strong>विषय:</strong> मराठी (उच्च), हिंदी, संस्कृत(संपूर्ण), इंग्रजी, गणित, विज्ञान, समाज शास्त्र,
+                तंत्र विज्ञान</p>
+            </div>
+
+            <div class="category-item">
+              <h3>३) उच्च माध्यमिक (H.S.C)</h3>
+              <p><strong>शास्त्र, कला, वाणिज्य:</strong> प्रथम, दुसरा आणि तिसरा क्रमांक</p>
+            </div>
+
+            <div class="category-item">
+              <h3>४) उच्च माध्यमिक (H.S.C) - विशिष्ट क्षेत्रे</h3>
+              <p><strong>कोकण विभाग, सिंधुदुर्ग व ठाणे जिल्हे</strong></p>
+              <p><strong>विषय:</strong> संगणक विज्ञान, गणित, पदार्थ विज्ञान, रसायन शास्त्र, विज्ञान, मराठी, इंग्रजी,
+                अर्थशास्त्र</p>
+            </div>
+
+            <div class="category-item">
+              <h3>५) पदवी कोर्स</h3>
+              <p>बी ए, बीएससी, बीकॉम, बीएससी (कृषी), बी ई, एम.बी.बी.एस, बी.ए.एम.एस, बी.एड</p>
+            </div>
+
+            <div class="category-item">
+              <h3>६) बी.ए मराठी विषयात प्रथम क्रमांक</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>७) शिष्यवृत्ती - माध्यमिक/प्राथमिक</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>८) राष्ट्रीय प्रज्ञा शोध (समाज पारितोषिक)</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>९) डी.एड</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>१०) डिप्लोमा इंजिनीरिंग</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>११) सी. ए</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>१२) आय.आय.टी इंजिनीरिंग डिग्री</h3>
+            </div>
+
+            <div class="category-item">
+              <h3>१३) बी.एस सी (नर्सिंग)</h3>
+            </div>
+          </div>
+
+          <div class="application-info">
+            <h3>अर्जासाठी आवश्यक माहिती</h3>
+            <p>पारितोषिकांसाठी विध्यार्थ्यानी गुणपत्रिकेसह (mark-list) विहित नमुन्यात अर्ज करणे आवश्यक आहे. ठराविक
+              मुदतीत संस्थेकडे उपलब्ध झालेल्या माहितीच्या आधारे ह्या सर्व पारितोषिकांचे मानकरी निश्चित केले जातात.</p>
+
+            <p><strong>विद्यावृद्धि समाजाकडे निर्धारित वेळेत उपलब्ध झालेल्या माहितीच्या आधारे ह्या पारितोषिकांचे मानकरी
+                निश्चित केले जाणार असल्यामुळे विद्यार्थांनी विहित नमुन्यातील अर्ज पूर्ण भरून गुण पत्रिकेच्या प्रतीसह
+                समाजाच्या कार्यालयात पाठविणे आवश्यक आहे.</strong></p>
+
+            <p>अर्जाचे फॉर्म्स संस्थेच्या कार्यालयात उपलब्ध आहेत. शिवाय संस्थेच्या संकेत स्थळावर देखील उपलब्ध आहेत.</p>
+          </div>
+
+          <div class="contact-info">
+            <h3>अधिक माहितीसाठी संपर्क</h3>
+            <div class="contact-table">
+              <div class="contact-row">
+                <span>१) कार्यालय</span>
+                <span>०२२ २३८२१६७५</span>
+              </div>
+              <div class="contact-row">
+                <span>२) पंतवालावलकर</span>
+                <span>९९३०९५७७०५</span>
+              </div>
+              <div class="contact-row">
+                <span>३) किरण सामंत</span>
+                <span>९८६९००१३३८</span>
+              </div>
+              <div class="contact-row">
+                <span>४) महेश राळकर</span>
+                <span>९२२३३३५१३५</span>
+              </div>
+            </div>
+            <p><strong>ईमेल:</strong> kdgb.viddhyavridhi@gmail.com</p>
+            <p><strong>अर्ज फॉर्म:</strong> <a href="form-modern.html" style="color: var(--primary-color);">इथे डाउनलोड
+                करा</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2025 <strong>KDGB Vidhyavriddhi Samaj</strong> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

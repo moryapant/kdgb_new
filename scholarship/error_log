@@ -1,0 +1,12 @@
+[25-May-2021 12:17:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/kdgb/public_html/scholarship/deleteme.wphzwc.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/kdgb/public_html/scholarship/deleteme.wphzwc.php on line 16
+[25-May-2021 12:17:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/kdgb/public_html/scholarship/deleteme.wplqcl.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/kdgb/public_html/scholarship/deleteme.wplqcl.php on line 16
+[25-May-2021 12:17:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/kdgb/public_html/scholarship/deleteme.wp0vkf.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/kdgb/public_html/scholarship/deleteme.wp0vkf.php on line 16

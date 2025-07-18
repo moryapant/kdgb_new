@@ -1,0 +1,43 @@
+@charset "utf-8";
+.stylesheet {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+}
+
+img{border:none;}
+
+.text{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#636563;
+	text-decoration:none;
+	text-align:justify;
+	line-height:20px;
+}
+
+.read_more{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#b55900;
+	text-decoration:none;
+}
+
+.links{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#f7df9c;
+	text-decoration:none;
+}
+
+.stylelinks, a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #f7df9c;
+	text-decoration: none;
+}
+.stylelinks a:hover{ 
+	color: #FFF;
+	text-decoration: underline;
+}

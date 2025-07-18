@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>देणगी - KDGB Vidhyavriddhi Samaj</title>
+  
+  <meta name="description" content="कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाज - देणगी माहिती">
+  <meta name="keywords" content="KDGB, देणगी, दान, विद्यावृद्धि समाज">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    .donation-section {
+      padding: 30px 0;
+    }
+    
+    .donation-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .donation-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .donation-header h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    .donation-header p {
+      color: #666;
+      font-size: 1.1em;
+    }
+    
+    .donation-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .donation-item {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .donation-item h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+    
+    .donation-item p {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    
+    .donation-item strong {
+      color: var(--dark-color);
+    }
+    
+    .bank-details {
+      background: #e8f5e8;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #28a745;
+      margin-bottom: 30px;
+    }
+    
+    .bank-details h3 {
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+    
+    .bank-details .account-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    
+    .account-detail {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #28a745;
+    }
+    
+    .account-detail strong {
+      color: #28a745;
+    }
+    
+    .purpose-section {
+      background: #fff3cd;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #ffc107;
+      margin-bottom: 30px;
+    }
+    
+    .purpose-section h3 {
+      color: #856404;
+      margin-bottom: 15px;
+    }
+    
+    .purpose-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .purpose-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    
+    .purpose-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+    
+    .donation-form {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--dark-color);
+      font-weight: 500;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .form-group textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    
+    .btn-donate {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .btn-donate:hover {
+      background: #e67600;
+    }
+    
+    .tax-benefits {
+      background: #d4edda;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #28a745;
+      margin-bottom: 30px;
+    }
+    
+    .tax-benefits h3 {
+      color: #155724;
+      margin-bottom: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .donation-info {
+        grid-template-columns: 1fr;
+      }
+      
+      .donation-header h1 {
+        font-size: 2em;
+      }
+      
+      .donation-card {
+        padding: 20px;
+      }
+      
+      .bank-details .account-info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div class="container">
+      <img src="banner/banner.jpg" alt="KDGB Banner" class="banner">
+      
+      <section class="founders-section">
+        <div class="founders-grid">
+          <div class="founder">कै.रावसाहेब गणेश रघुनाथ पाटकर</div>
+          <div class="founder">कै.पाडुरंग भिकाजी उर्फ तात्यासाहेब नाईक</div>
+          <div class="founder">कै. विठ्ठल तात्या देसाई</div>
+          <div class="founder">कै. पुरुषोत्तम पांडुरंग वाघ</div>
+        </div>
+        <p class="founder-note">टीप: संस्थापक व आद्य चिटणीस कै.अनंतराव सीताराम देसाई यांचे छायाचित्र उपलब्ध नाही.</p>
+      </section>
+
+      <section class="donation-section">
+        <div class="donation-card">
+          <div class="donation-header">
+            <h1>देणगी आणि दान</h1>
+            <p>शिक्षणाच्या विकासासाठी आपले योगदान द्या</p>
+          </div>
+          
+          <div class="purpose-section">
+            <h3>देणगीचे उद्देश</h3>
+            <ul class="purpose-list">
+              <li>विद्यार्थ्यांना शिष्यवृत्ती आणि पारितोषिक वितरण</li>
+              <li>शैक्षणिक उत्कृष्टतेला प्रोत्साहन</li>
+              <li>गरीब विद्यार्थ्यांना आर्थिक सहाय्य</li>
+              <li>शिक्षण क्षेत्रातील नवीन उपक्रम</li>
+              <li>समाजसेवा कार्यक्रम</li>
+            </ul>
+          </div>
+          
+          <div class="tax-benefits">
+            <h3>कर सवलत</h3>
+            <p><strong>80G तरतुदी:</strong> आपली देणगी आयकर कायदा कलम ८०जी अंतर्गत कर सवलतीसाठी पात्र आहे.</p>
+            <p><strong>रसीद:</strong> देणगीसाठी योग्य रसीद दिली जाईल.</p>
+          </div>
+          
+          <div class="bank-details">
+            <h3>बँक तपशील</h3>
+            <div class="account-info">
+              <div class="account-detail">
+                <p><strong>बँकेचे नाव:</strong> [बँकेचे नाव]</p>
+                <p><strong>खाते क्रमांक:</strong> [खाते क्रमांक]</p>
+                <p><strong>IFSC कोड:</strong> [IFSC कोड]</p>
+              </div>
+              <div class="account-detail">
+                <p><strong>खातेधारकाचे नाव:</strong></p>
+                <p>KDGB Vidhyavriddhi Samaj</p>
+                <p><strong>शाखा:</strong> [शाखेचे नाव]</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="donation-info">
+            <div class="donation-item">
+              <h3>ऑनलाइन देणगी</h3>
+              <p>सुरक्षित ऑनलाइन पेमेंट गेटवे द्वारे तुम्ही देणगी देऊ शकता.</p>
+              <p><strong>स्वीकारले जाणारे पेमेंट:</strong></p>
+              <ul>
+                <li>डेबिट/क्रेडिट कार्ड</li>
+                <li>नेट बँकिंग</li>
+                <li>UPI पेमेंट</li>
+                <li>डिजिटल वॉलेट</li>
+              </ul>
+            </div>
+            
+            <div class="donation-item">
+              <h3>चेक/DD द्वारे</h3>
+              <p><strong>नाव:</strong> "KDGB Vidhyavriddhi Samaj"</p>
+              <p><strong>पत्ता:</strong></p>
+              <p>३०, कुडाळदेशकर ब्राह्मण निवास</p>
+              <p>जगन्नाथ शंकरशेट मार्ग, गिरगांव</p>
+              <p>मुंबई ४०० ००४</p>
+            </div>
+          </div>
+          
+          <div class="donation-form">
+            <h3>देणगी फॉर्म</h3>
+            <form id="donationForm" action="mailto:morya123@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="donorName">दातं्याचे नाव *</label>
+                <input type="text" id="donorName" name="donorName" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donorEmail">ईमेल *</label>
+                <input type="email" id="donorEmail" name="donorEmail" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donorPhone">फोन नंबर *</label>
+                <input type="tel" id="donorPhone" name="donorPhone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donationAmount">देणगी रक्कम (₹) *</label>
+                <input type="number" id="donationAmount" name="donationAmount" min="1" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donationPurpose">देणगीचा उद्देश</label>
+                <select id="donationPurpose" name="donationPurpose">
+                  <option value="">निवडा</option>
+                  <option value="scholarship">शिष्यवृत्ती</option>
+                  <option value="prizes">पारितोषिक</option>
+                  <option value="general">सामान्य</option>
+                  <option value="infrastructure">पायाभूत सुविधा</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="donorAddress">पत्ता</label>
+                <textarea id="donorAddress" name="donorAddress" placeholder="तुमचा पूर्ण पत्ता"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="donorMessage">संदेश</label>
+                <textarea id="donorMessage" name="donorMessage" placeholder="विशेष संदेश (वैकल्पिक)"></textarea>
+              </div>
+              
+              <button type="submit" class="btn-donate">देणगी द्या</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2025 <strong>KDGB Vidhyavriddhi Samaj</strong> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Form submission handler
+    document.getElementById('donationForm').addEventListener('submit', function(e) {
+      // Validate form before submission
+      if (!KDGB.validateForm(this)) {
+        e.preventDefault();
+        return false;
+      }
+      
+      // Format the email body with form data
+      const formData = new FormData(this);
+      let emailBody = 'देणगी फॉर्म माहिती:\n\n';
+      
+      emailBody += 'नाव: ' + formData.get('donorName') + '\n';
+      emailBody += 'ईमेल: ' + formData.get('donorEmail') + '\n';
+      emailBody += 'फोन: ' + formData.get('donorPhone') + '\n';
+      emailBody += 'देणगी रक्कम: ₹' + formData.get('donationAmount') + '\n';
+      emailBody += 'उद्देश: ' + formData.get('donationPurpose') + '\n';
+      emailBody += 'पत्ता: ' + formData.get('donorAddress') + '\n';
+      emailBody += 'संदेश: ' + formData.get('donorMessage') + '\n';
+      emailBody += '\nधन्यवाद!\nKDGB Vidhyavriddhi Samaj';
+      
+      // Set the email body
+      this.action = 'mailto:morya123@gmail.com?subject=देणगी फॉर्म - KDGB Vidhyavriddhi Samaj&body=' + encodeURIComponent(emailBody);
+      
+      // Show success message
+      alert('धन्यवाद! तुमची देणगी माहिती ईमेल क्लायंटमध्ये तयार केली गेली आहे. कृपया पाठवा.');
+    });
+  </script>
+</body>
+
+</html>

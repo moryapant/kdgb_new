@@ -1,0 +1,964 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>        
+
+
+
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> -->
+<meta content="mr" http-equiv="Content-Language">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="{KEYWORDS}" />
+<meta name="description" content="{DESCRIPTION}" />
+<meta name="author" content="{AUTHOR}" /> -->
+
+<title>Home</title>
+<script language="javascript" type="text/javascript" src="Home_files/jquery_003.js"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script>
+<script language="javascript" type="text/javascript" src="Home_files/search.js"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script>
+<script type="text/javascript" src="Home_files/jquery.js"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script>
+<script type="text/javascript" src="Home_files/jquery-1.htm"></script>
+<script type="text/javascript" src="Home_files/jquery_002.js"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script>
+<script type="text/javascript" src="Home_files/highslide-with-gallery.js"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script><script src="Home_files/1.htm"></script>
+<link rel="stylesheet" type="text/css" href="Home_files/highslide.css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+function getAlbum(val)
+{
+    //alert(val);
+	var url = '/cms/fancybox/example/result.php?album_id='+val;
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: ({           
+            query: val, search: 1
+		    }),
+        dataType:"html",
+        error: function (xhr, desc, exceptionobj) {
+        //alert(xhr.responseText);
+        },
+        success : function (json) { //alert(json);
+		   $('#SearchResult').html(json);
+		  		
+        },
+        complete: function () {
+			
+        }
+    });
+return false;
+}
+
+</script>
+<script type="text/javascript">
+	hs.graphicsDir = 'graphics/';
+	hs.align = 'center';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.outlineType = 'rounded-white';
+	hs.fadeInOut = true;
+	hs.numberPosition = 'caption';
+	hs.dimmingOpacity = 0.75;
+
+	// Add the controlbar
+	if (hs.addSlideshow) hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+		overlayOptions: {
+			opacity: .75,
+			position: 'bottom center',
+			hideOnMouseOut: true
+		}
+	});
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #f8f3d5;
+	background-image: url(/Template/site/bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+}
+
+.mainText
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;
+}
+-->
+</style>
+<link href="Home_files/stylesheet.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.mainText1 {	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;
+}
+-->
+</style>
+<script src="Home_files/1.htm"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><style type="text/css">.highslide img {cursor: url(graphics/zoomin.cur), pointer !important;}</style></head><body>
+<table width="1000" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td width="3%">&nbsp;</td>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//logo/logo.jpg&quot;); background-repeat: no-repeat; background-position: center top; height: 135px;" valign="bottom" align="right"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td align="right"><table width="200" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td class="mainText1" valign="top" align="left" height="20"><script language="JavaScript" type="text/javascript">
+<!-- hide from old browsers
+  function GetDay(intDay){
+    var DayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", 
+                         "Thursday", "Friday", "Saturday")
+    return DayArray[intDay]
+    }
+
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December") 
+    return MonthArray[intMonth] 	  	 
+    }
+  function getDateStrWithDOW(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetDay(today.getDay()) + ", "
+    todayStr += GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+//-->
+            </script>
+                  <script language="JavaScript" type="text/javascript">
+<!-- hide from old browsers
+    document.write(getDateStrWithDOW())
+//-->
+              </script>Friday, September 3, 2010
+                  &nbsp;</td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td align="right">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right"><table width="20%" border="0" cellpadding="0" cellspacing="0">
+			
+              <tbody><tr>
+                <td>
+				<form name="form_Lang" method="post">
+				<input name="hidLangName" id="hidLangName" type="hidden">
+				<input name="imgBtnEng" id="imgBtnEng" src="Home_files/marathi.jpg" width="20" type="image" height="12"></form></td>
+                <td class="mainText"><a href="javascript:fn_changeLang('marathi');" class="mainText"><strong>MARATHI</strong></a><a></a></td>
+                <td><input name="imgBtnDutch" id="imgBtnDutch" src="Home_files/en_flag.jpg" width="20" type="image" height="12"></td>
+                <td class="mainText"><a href="javascript:fn_changeLang('english');" class="mainText"><strong>ENGLISH</strong></a><a>
+				</a></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td align="right">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right"><table width="80%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td width="22"><img src="Home_files/link_left.jpg" width="22" height="41"></td>
+                <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//link_mid.jpg&quot;); background-repeat: repeat-x;"><table class="stylelinks" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                  
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Home.php/" class="link">Home</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Prizes.php/" class="link">Prizes</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/scholarship.php/" class="link">scholarship</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/membership.php/" class="link">membership</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Refunds.php/" class="link">Refunds</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Contact.php/" class="link">Contact</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/balance-sheet.php/" class="link">balance-sheet</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/History.php/" class="link">History</a></td>
+                    
+                    </tr>
+                </tbody></table></td>
+                <td width="22"><img src="Home_files/link_right.jpg" width="22" height="41"></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td align="right"><img src="Home_files/banner.jpg" width="928" height="277"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="928" align="right" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td style="border: 1px solid rgb(248, 226, 150);" bgcolor="#fffff7"><table width="96%" align="center" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td class="text" valign="top" width="65%"><div id="SearchResult"><h3 style="color: Red; text-align: center;"><span style="font-size: large;"><strong><b><bdo dir="ltr"></bdo></b></strong></span><big><span style="font-size: large;"><bdo dir="ltr"></bdo></span></big></h3>
+<p>
+
+
+
+
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:ApplyBreakingRules />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:3;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-bidi-font-family:"Trebuchet MS";
+	font-weight:normal;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1292591731;
+	mso-list-template-ids:1086899536;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+table.MsoTableGrid
+{mso-style-name:"Table Grid";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-border-insideh:.5pt solid windowtext;
+mso-border-insidev:.5pt solid windowtext;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:none;
+mso-layout-grid-align:none;
+text-autospace:none;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+</style>
+<![endif]--> </p>
+<h3><b><span style="font-size: 14pt; color: red;"><span style="">&nbsp;&nbsp;&nbsp; </span></span></b></h3>
+<h3><b><span style="font-size: 14pt; color: red;"><span style="">&nbsp;&nbsp;&nbsp; </span></span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">कुडाळदेशस्थ</span></b><b><span style="font-size: 14pt; color: red;" lang="HI"> </span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">गौड</span></b><b><span style="font-size: 14pt; color: red;" lang="HI"> </span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">ब्राह्मण</span></b><b><span style="font-size: 14pt; color: red;">&nbsp;&nbsp;</span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">विद्यावृद्धि</span></b><b><span style="font-size: 14pt; color: red;" lang="HI"> </span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">समाज</span></b><b><span style="font-size: 14pt; color: red;">&nbsp;, </span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">गिरगांव</span></b><b><span style="font-size: 14pt; color: red;">&nbsp;,</span></b><b><span style="font-size: 14pt; font-family: Mangal; color: red;" lang="HI">मुंबई</span></b><b><span style="font-size: 14pt; color: red;"><o:p></o:p></span></b></h3>
+<table class="MsoTableGrid" style="border: medium none; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr style="">
+            <td colspan="2" style="border: medium none; padding: 0in 5.4pt; width: 419.4pt;" valign="top" width="559">
+            <p style="text-align: center;" align="center"><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">संस्थेचे</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">पदाधिकारी</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">आणि</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">कार्यका<wbr>री</span></b><b><span style="font-size: 13.5pt;">&nbsp; </span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">मंडळ</span></b><b><span style="font-size: 13.5pt;" lang="HI"> </span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">सदस्य</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 18pt;">(2009-10)</span></b><o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border: 1pt solid windowtext; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">पदाधिकारी </span></i></b><b><i><span style="font-size: 13.5pt;"><o:p></o:p></span></i></b></p>
+            </td>
+            <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">संपर्क<o:p></o:p></span></i></b></p>
+            </td>
+        </tr>
+        <tr style="height: 22.9pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 22.9pt;" valign="top" width="439">
+            <ol start="1" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">अध्यक्ष</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री.</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">दत्तात्रय</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सखाराम</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">आजगां<wbr>वकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 22.9pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-   २३८६६३४१<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 19.75pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 19.75pt;" valign="top" width="439">
+            <ol start="2" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">उपाध्यक्ष</span><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">डॉ</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">रविन्द्र</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">बाबु<wbr>राव</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">तिरोड़कर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 19.75pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८३४५७८०</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 3.5pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 3.5pt;" valign="top" width="439">
+            <ol start="3" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">उपाध्यक्ष</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">डॉ कमलाकर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">दिनकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">देसाई</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+      &nbsp;&nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 3.5pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८७२५९२२</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="4" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">विश्वस्त</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री अनंत</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">महादेव परुळेकर</span><span style="font-size: 10pt;">&nbsp; (</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">व्यवस्थापक मंडळ सभासद ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२२४४६३९९<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="5" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">विश्वस्त</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री भालचंद्र</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">राजाराम</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सामंत</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-   २३८५७१६१<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="6" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">विश्वस्त</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्रीपाद बाळकृष्ण</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">पाटील</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२२४२२७७१<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p class="MsoNormal" style="margin-left: 0.25in;"><span style="font-size: 10pt;">7.&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">खजिनदार</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री</span><span style="font-size: 10pt;" lang="HI"> </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">रत्नाकर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">वासुदेव</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">वालावलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;(</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">व्यवस्थापक मंडळ सभासद ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp; <wbr>&nbsp; &nbsp; &nbsp; <o:p></o:p></span></p>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२६४२०४११</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 7.15pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 7.15pt;" valign="top" width="439">
+            <ol start="7" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">चिटणीस श्री सुधाकर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सखाराम पाटकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 7.15pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२३८६०८७६</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 13pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 13pt;" valign="top" width="439">
+            <ol start="8" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">चिटणीस श्री किरण</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">दत्तात्रय सामंत</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;        (</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">व्यवस्थापक मंडळ सभासद ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 13pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२३०८९६८०<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 3.5pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 3.5pt;" valign="top" width="439">
+            <ol start="9" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">चिटणीस श्री नरसिंह</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">नारायण</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">पंत</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">वालावलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 3.5pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२५१-२४०३८७१</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><o:p>&nbsp;</o:p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:ApplyBreakingRules />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:589970014;
+	mso-list-template-ids:-756353100;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+table.MsoTableGrid
+{mso-style-name:"Table Grid";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-border-insideh:.5pt solid windowtext;
+mso-border-insidev:.5pt solid windowtext;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:none;
+mso-layout-grid-align:none;
+text-autospace:none;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</p><table class="MsoTableGrid" style="border: medium none; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr style="">
+            <td style="border: 1pt solid windowtext; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">कार्यकारी मंडळ</span></i></b><b><i><span style="font-size: 13.5pt;" lang="HI">   </span></i></b><b><i><span style="font-size: 13.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></i></b><i><o:p></o:p></i></p>
+            </td>
+            <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><b><i><span style="font-size: 13.5pt;">&nbsp;&nbsp; </span></i></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">संपर्क</span></b><o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="1" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री सुंदर रामकृष्ण        सामंत नेवाळकर </span><span style="font-size: 10pt;">&nbsp;- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">चेअरमन</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२- २८७२२०२२</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="2" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">डॉ अजय</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">दिगंबर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">पाटील</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;        &nbsp;&nbsp;- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">व्हाइस चेअरमन</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२६८३४४६०</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="3" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री शशीकांत तुकाराम</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">बांबार्डेकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-&nbsp;        </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२६४०१९७७</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="4" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री        बाळकृष्ण श्रीनिवास पाटील</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp; <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८७३७९०८</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="5" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सौ        सुनिता मनोहर आजगावकर</span><span style="font-size: 10pt;">&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८०५८८९४</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="6" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">प्रो</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">जगदिश साबाजी वालावलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; - </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८७८७५५३</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="7" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री दिगंबर गणेश</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सामंत</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२६८४२५७०</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="8" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री        अनंत जनार्दन</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">तेंडुलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; <span style="">&nbsp;</span><wbr>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp;        &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२७७०९२८१</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="9" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री रत्नाकर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">प्रभाकर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">तेंडोलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;        &nbsp; &nbsp; -</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
+     &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२४२२४४०५</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="10" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री        मनीष</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">गुरुदास</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">दाभोलकर</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;        <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८७५११३६</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="11" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सौ        सुहासिनी</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">भास्कर</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सामंत</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;<span style="">&nbsp; </span><span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२</span><span style="font-size: 10pt;">-<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="12" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्री रमेश</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">श्रीपाद देसाई</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <span style="">&nbsp;</span>-</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">सदस्य</span><span style="font-size: 10pt;">&nbsp;(</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">स्वीकृ<wbr>त)</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt;"><span style="">&nbsp;</span></span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">०२२-२८९७६८२८</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:ApplyBreakingRules />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+</style>
+<![endif]--> </p>
+<p><span style="font-size: small;">&nbsp; <span style="font-family: Mangal;" lang="HI">लेखनिक</span>&nbsp;&nbsp;&nbsp; <span style="font-family: Mangal;" lang="HI">सौ. अंजली अजित मातोंडकर</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"> <span style="font-family: Mangal;" lang="HI">०२२-२३८२ १६७५</span> </span>&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <o:p></o:p></p>
+<p>&nbsp;</p>
+<p>
+
+
+
+</p>
+<!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:ApplyBreakingRules />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]-->  <!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+table.MsoTableGrid
+{mso-style-name:"Table Grid";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-border-insideh:.5pt solid windowtext;
+mso-border-insidev:.5pt solid windowtext;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:none;
+mso-layout-grid-align:none;
+text-autospace:none;
+font-size:10.0pt;
+font-family:"Times New Roman";}
+</style>
+<![endif]--></div></td>
+                <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//line_bg.jpg&quot;); background-repeat: repeat-y; background-position: center center; padding-bottom: 10px; padding-top: 10px;" valign="top" width="2%">&nbsp;</td>
+                <td valign="top"><table width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td valign="bottom" bgcolor="#fffff7" height="45"><img src="Home_files/news.jpg" width="262" height="31"></td>
+                  </tr>
+                  <tr>
+                    <td><marquee direction="up" scrolldelay="200" onmouseover="this.stop();" onmouseout="this.start();" width="260" height="158"><p class="text">१.
+ विविध परीक्षांत गुणवत्तेसह उत्तीर्ण झालेल्या आपल्या जातीतील गुणवंत 
+विद्यार्थ्यांस पारितोषिके देऊन त्यांचे कौतुक करण्याचा  समारंभ - "कौतुक 
+सोहळा" - प्रतिवर्षी संस्थेतर्फे आयोजित करण्यात येतो. या वर्षी अशा 
+पारितोषिकांसाठी संस्थेकडे अर्ज करायची अंतिम मुदत ३१ ऑगस्ट 2010
+ </p>
+					<!-- <p class="text">२.  त्यानंतर झालेल्या कार्यकारी मंडळाच्या सभेत श्री सुंदर रामकृष्ण सामंत नेवाळकर व प्रो अजय दिगंबर पाटील यांची  अनुक्रमे चेअरमन आणि व्हा .चेअरमन पदी निवड झाली.कार्यकारी मंडळावर चिटणीसाचे प्रतिनिधी म्हणून श्री किरण दत्तात्रय सामंत आणि विश्वस्त प्रतिनिधी म्हणून श्री. भालचंद्र राजाराम सामंत याची निवड करण्यात आली.</p>
+					<p class="text">३. संस्थेच्या वतीने पारितोषिक वितरण समारभ २.१०.२००९ रोजी संपन्न झाला.</p> -->
+					<p class="text">२. सन २००९.१० रा वर्षाकरिता एकूण ५४० मुलांना रुपये १०.०० लाख शिष्यवृत्ती वाटण्यात आली.</p><p class="text">३. सन २०१०-११ सालाकरिता शिष्यवृत्तीचे अर्ज स्वीकारण्याची अंतिम तारीख ३१ जुलै २०१०</p></marquee></td> 
+					
+					
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="read_more"><img src="Home_files/photo.jpg" width="262" height="31"></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <tbody><tr>
+                        <td width="45%"><img src="Home_files/im_1.jpg" width="119" height="80"></td>
+                        <td width="10%" align="center">&nbsp;</td>
+                        <td width="45%"><img src="Home_files/im_1.jpg" width="119" height="80"></td>
+                      </tr>
+                    </tbody></table></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="read_more" align="right"><a href="http://kdgb-vidhyavriddhisamaj.com/Gallery.php/"><strong>View More...</strong></a><a></a></td>
+                  </tr>
+                </tbody></table><p>Download Forms:</p>
+				<p style="color: red;"><a href="http://www.kdgb-vidhyavriddhisamaj.com/forms.html" style="color: red;" target="_blank"> DOWNLOAD ALL FORMS </a></p></td>
+                
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr></tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="read_more" align="center">Copyright Ã‚Â© 2009 <strong>KDGB vidhyavriddhi samaj</strong> All rights reserved.</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <!-- <td width="3%">&nbsp;</td> -->
+  </tr>
+</tbody></table>
+<div id="fancy_overlay"></div><div id="fancy_wrap"><div class="fancy_loading" id="fancy_loading"><div></div></div><div id="fancy_outer"><div id="fancy_inner"><div id="fancy_close"></div><div id="fancy_bg"><div class="fancy_bg fancy_bg_n"></div><div class="fancy_bg fancy_bg_ne"></div><div class="fancy_bg fancy_bg_e"></div><div class="fancy_bg fancy_bg_se"></div><div class="fancy_bg fancy_bg_s"></div><div class="fancy_bg fancy_bg_sw"></div><div class="fancy_bg fancy_bg_w"></div><div class="fancy_bg fancy_bg_nw"></div></div><a href="javascript:;" id="fancy_left"><span class="fancy_ico" id="fancy_left_ico"></span></a><a href="javascript:;" id="fancy_right"><span class="fancy_ico" id="fancy_right_ico"></span></a><div id="fancy_content"></div><div id="fancy_title"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="fancy_title" id="fancy_title_left"></td><td class="fancy_title" id="fancy_title_main"><div></div></td><td class="fancy_title" id="fancy_title_right"></td></tr></tbody></table></div></div></div></div><div style="padding: 0pt; border: medium none; margin: 0pt; position: absolute; left: 0pt; top: 0pt; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" href="javascript:;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><table style="padding: 0pt; border: medium none; margin: 0pt; visibility: hidden; position: absolute; border-collapse: collapse; width: 0pt;" cellspacing="0"><tbody style="padding: 0pt; border: medium none; margin: 0pt;"><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td class="rounded-white highslide-outline" style="padding: 0pt; border: medium none; margin: 0pt; position: relative;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr></tbody></table></div></body></html>

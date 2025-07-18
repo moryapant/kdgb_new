@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इतिहास - KDGB Vidhyavriddhi Samaj</title>
+  
+  <meta name="description" content="कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाज - संस्थेचा इतिहास">
+  <meta name="keywords" content="KDGB, इतिहास, स्थापना, विद्यावृद्धि समाज">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    .history-section {
+      padding: 30px 0;
+    }
+    
+    .history-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .history-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .history-header h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    .history-header p {
+      color: #666;
+      font-size: 1.1em;
+    }
+    
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: var(--primary-color);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+    
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: var(--primary-color);
+      border: 4px solid white;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    .timeline-item.left {
+      left: 0;
+    }
+    
+    .timeline-item.right {
+      left: 50%;
+    }
+    
+    .timeline-item.right::after {
+      left: -16px;
+    }
+    
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: #f8f9fa;
+      position: relative;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .timeline-year {
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    
+    .achievement-section {
+      background: #e8f5e8;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .achievement-section h2 {
+      color: #28a745;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .achievement-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #28a745;
+      text-align: center;
+    }
+    
+    .achievement-number {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+    
+    .achievement-text {
+      color: #666;
+      font-size: 0.9em;
+    }
+    
+    .founder-section {
+      background: #fff3cd;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .founder-section h2 {
+      color: #856404;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .founder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .founder-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid #ffc107;
+    }
+    
+    .founder-name {
+      font-weight: bold;
+      color: var(--dark-color);
+      margin-bottom: 10px;
+    }
+    
+    .founder-role {
+      color: #666;
+      font-size: 0.9em;
+    }
+    
+    .milestone-section {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .milestone-section h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .milestone-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .milestone-list li {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .milestone-list li strong {
+      color: var(--primary-color);
+    }
+    
+    @media (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+      
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      
+      .timeline-item.right {
+        left: 0%;
+      }
+      
+      .timeline-item::after {
+        left: 15px;
+      }
+      
+      .timeline-item.right::after {
+        left: 15px;
+      }
+      
+      .history-header h1 {
+        font-size: 2em;
+      }
+      
+      .history-card {
+        padding: 20px;
+      }
+      
+      .achievement-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div class="container">
+      <img src="banner/banner.jpg" alt="KDGB Banner" class="banner">
+      
+      <section class="founders-section">
+        <div class="founders-grid">
+          <div class="founder">कै.रावसाहेब गणेश रघुनाथ पाटकर</div>
+          <div class="founder">कै.पाडुरंग भिकाजी उर्फ तात्यासाहेब नाईक</div>
+          <div class="founder">कै. विठ्ठल तात्या देसाई</div>
+          <div class="founder">कै. पुरुषोत्तम पांडुरंग वाघ</div>
+        </div>
+        <p class="founder-note">टीप: संस्थापक व आद्य चिटणीस कै.अनंतराव सीताराम देसाई यांचे छायाचित्र उपलब्ध नाही.</p>
+      </section>
+
+      <section class="history-section">
+        <div class="history-card">
+          <div class="history-header">
+            <h1>संस्थेचा इतिहास</h1>
+            <p>कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाज - १३० वर्षांचा गौरवशाली प्रवास</p>
+          </div>
+          
+          <div class="achievement-section">
+            <h2>आमची कामगिरी</h2>
+            <div class="achievement-grid">
+              <div class="achievement-item">
+                <div class="achievement-number">130+</div>
+                <div class="achievement-text">वर्षे सेवा</div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-number">10,000+</div>
+                <div class="achievement-text">विद्यार्थी लाभार्थी</div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-number">500+</div>
+                <div class="achievement-text">पारितोषिक वितरण</div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-number">50+</div>
+                <div class="achievement-text">शिष्यवृत्ती योजना</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="founder-section">
+            <h2>संस्थापक</h2>
+            <div class="founder-grid">
+              <div class="founder-card">
+                <div class="founder-name">कै.अनंतराव सीताराम देसाई</div>
+                <div class="founder-role">संस्थापक व आद्य चिटणीस</div>
+              </div>
+              <div class="founder-card">
+                <div class="founder-name">कै.रावसाहेब गणेश रघुनाथ पाटकर</div>
+                <div class="founder-role">संस्थापक सदस्य</div>
+              </div>
+              <div class="founder-card">
+                <div class="founder-name">कै.पाडुरंग भिकाजी तात्यासाहेब नाईक</div>
+                <div class="founder-role">संस्थापक सदस्य</div>
+              </div>
+              <div class="founder-card">
+                <div class="founder-name">कै. विठ्ठल तात्या देसाई</div>
+                <div class="founder-role">संस्थापक सदस्य</div>
+              </div>
+              <div class="founder-card">
+                <div class="founder-name">कै. पुरुषोत्तम पांडुरंग वाघ</div>
+                <div class="founder-role">संस्थापक सदस्य</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">१८९४</div>
+                <h3>संस्थेची स्थापना</h3>
+                <p>कुडाळदेशस्थ गौड ब्राह्मण विद्यावृद्धि समाजाची स्थापना मुंबईत झाली. शिक्षणाच्या प्रसारासाठी हा महत्वाचा उपक्रम सुरू झाला.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <div class="timeline-year">१९००</div>
+                <h3>पहिले पारितोषिक वितरण</h3>
+                <p>संस्थेने पहिल्यांदा मेधावी विद्यार्थ्यांना पारितोषिक वितरीत केले. शिक्षणाला प्रोत्साहन देण्याचा हा प्रारंभ होता.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">१९२५</div>
+                <h3>शिष्यवृत्ती योजना सुरुवात</h3>
+                <p>गरीब परंतु मेधावी विद्यार्थ्यांसाठी शिष्यवृत्ती योजना सुरू केली गेली. शिक्षणाच्या गुणवत्तेत सुधारणा करण्याचा प्रयत्न.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <div class="timeline-year">१९५०</div>
+                <h3>विश्वस्त संस्था म्हणून नोंदणी</h3>
+                <p>संस्था नोंदणी अधिनियम १८६० आणि मुंबई सार्वजनिक विश्वस्त व्यवस्था अधिनियम १९५० अन्वये नोंदणी (नोंदणी क्रमांक ए-१२४९).</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">१९९४</div>
+                <h3>शताब्दी समारंभ</h3>
+                <p>संस्थेच्या शताब्दी वर्षाचा उत्सव साजरा करण्यात आला. शिक्षण क्षेत्रातील १०० वर्षांच्या सेवेचा गौरव.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <div class="timeline-year">२०१९</div>
+                <h3>शतकोत्तर रौप्य महोत्सव</h3>
+                <p>संस्थेच्या १२५ व्या वर्षाचा उत्सव मोठ्या उत्साहाने साजरा करण्यात आला. डिजिटल युगाचा प्रारंभ.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">२०२५</div>
+                <h3>आधुनिकीकरण</h3>
+                <p>संस्थेच्या कार्यपद्धतीत आधुनिकीकरण. ऑनलाइन अर्ज प्रणाली आणि डिजिटल सेवा सुरू केली.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="milestone-section">
+            <h2>मुख्य मैलाचे दगड</h2>
+            <ul class="milestone-list">
+              <li><strong>शिक्षण प्रोत्साहन:</strong> १३० वर्षांपासून शिक्षण क्षेत्रात अविरत सेवा</li>
+              <li><strong>पारितोषिक वितरण:</strong> दरवर्षी २ ऑक्टोबर रोजी पारितोषिक वितरण समारंभ</li>
+              <li><strong>शिष्यवृत्ती योजना:</strong> विविध शैक्षणिक स्तरावर शिष्यवृत्ती प्रदान</li>
+              <li><strong>समुदाय सेवा:</strong> कुडाळदेशस्थ गौड ब्राह्मण समुदायाची शैक्षणिक प्रगती</li>
+              <li><strong>आधुनिकीकरण:</strong> डिजिटल प्रणाली आणि ऑनलाइन सेवा</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2025 <strong>KDGB Vidhyavriddhi Samaj</strong> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

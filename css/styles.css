@@ -1,0 +1,721 @@
+/* Modern CSS for KDGB Vidhyavriddhi Samaj website */
+
+:root {
+    --primary-color: #FF860D;
+    --secondary-color: #f8f3d5;
+    --dark-color: #333;
+    --light-color: #fff;
+    --accent-color: #ff0000;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Mangal', 'Arial', sans-serif;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: var(--light-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.date-display {
+    font-size: 14px;
+    color: var(--dark-color);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile menu */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: 2px solid var(--primary-color);
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.mobile-menu-btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 18px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.content-area {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 0 20px;
+    border-left: 1px solid #eee;
+}
+
+/* News section */
+.news-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+}
+
+.news-content {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Board members section */
+.board-members {
+    margin-bottom: 30px;
+}
+
+.board-title {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.board-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Downloads section */
+.download-section {
+    margin-bottom: 30px;
+}
+
+.download-links {
+    list-style: none;
+}
+
+.download-links li {
+    margin-bottom: 10px;
+}
+
+.download-links a {
+    display: block;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: var(--dark-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-links a:hover {
+    background-color: #e9e9e9;
+}
+
+/* Videos section */
+.videos-section {
+    margin-bottom: 30px;
+}
+
+.video-links {
+    list-style: none;
+}
+
+.video-links li {
+    margin-bottom: 10px;
+}
+
+.video-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Founders section */
+.founders-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.founder {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.founder-note {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Enhanced contact info */
+.contact-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+}
+
+.contact-table {
+    margin-top: 10px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+}
+
+/* Enhanced sections */
+.photo-gallery-section,
+.download-section,
+.videos-section {
+    margin-bottom: 30px;
+}
+
+.gallery-preview {
+    text-align: center;
+    padding: 15px;
+}
+
+.gallery-preview img {
+    transition: transform 0.3s;
+}
+
+.gallery-preview img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile touch targets */
+@media (max-width: 768px) {
+
+    .download-links a,
+    .video-links a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        touch-action: manipulation;
+    }
+
+    .nav-list a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        touch-action: manipulation;
+    }
+
+    .mobile-menu-btn {
+        min-height: 44px;
+        min-width: 44px;
+        touch-action: manipulation;
+    }
+}
+
+/* Focus styles for accessibility */
+.keyboard-navigation a:focus,
+.keyboard-navigation button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Improved table mobile scrolling */
+@media (max-width: 768px) {
+    .overflow-x-auto {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+        background: #e5750b;
+    }
+
+    /* Simple mobile table adjustments */
+    table {
+        font-size: 12px;
+        min-width: 600px;
+    }
+
+    .px-6 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .py-3,
+    .py-4 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 11px;
+        min-width: 500px;
+    }
+
+    .px-6 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .py-3,
+    .py-4 {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+}
+
+/* Board members enhancements */
+.board-subtitle {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .logo {
+        max-width: 280px;
+    }
+
+    .nav-list a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .content-area,
+    .sidebar {
+        flex: 1 1 100%;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #eee;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .founders-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Table improvements for tablet */
+    table {
+        font-size: 14px;
+    }
+
+    .px-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .logo {
+        max-width: 260px;
+    }
+
+    .nav-list a {
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary-color);
+        box-shadow: var(--shadow);
+        z-index: 1000;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .logo-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .date-display {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .founders-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .founder {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Enhanced mobile table styling */
+    .overflow-x-auto {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0 -10px;
+    }
+
+    table {
+        font-size: 12px;
+        min-width: 650px;
+    }
+
+    .px-6 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .py-3,
+    .py-4 {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    /* Mobile banner adjustments */
+    .banner {
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Board titles mobile optimization */
+    .board-title {
+        font-size: 20px;
+        line-height: 1.3;
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+
+    .board-subtitle {
+        font-size: 17px;
+        line-height: 1.3;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    /* News section mobile optimization */
+    .news-content {
+        height: 350px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Mobile logo adjustments */
+    .logo {
+        max-width: 220px;
+    }
+
+    /* Improve sidebar sections spacing */
+    .sidebar {
+        padding: 0 10px;
+    }
+
+    /* Better mobile navigation */
+    .nav-list a {
+        padding: 18px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Main content padding */
+    .main-content {
+        padding: 20px 0;
+        margin-top: 15px;
+    }
+
+    .content-area {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Extra small mobile devices */
+    .container {
+        padding: 0 8px;
+    }
+
+    table {
+        font-size: 11px;
+        min-width: 500px;
+    }
+
+    .px-6 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .board-title {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .board-subtitle {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .section-title {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+
+    .founder {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Adjust news content for very small screens */
+    .news-content {
+        height: 280px;
+        font-size: 13px;
+        padding: 10px;
+        line-height: 1.4;
+    }
+
+    /* Contact table mobile optimization */
+    .contact-row {
+        flex-direction: column;
+        text-align: left;
+        padding: 8px 0;
+    }
+
+    .contact-row span:first-child {
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: var(--primary-color);
+    }
+
+    /* Mobile navigation improvements */
+    .nav-list a {
+        padding: 16px 15px;
+        font-size: 15px;
+    }
+
+    /* Improve spacing on very small screens */
+    .main-content {
+        padding: 15px 0;
+    }
+
+    .content-area {
+        padding: 0 10px;
+    }
+
+    .sidebar {
+        padding: 0 10px;
+    }
+
+    /* Gallery preview optimization */
+    .gallery-preview {
+        padding: 10px;
+    }
+
+    .gallery-preview p {
+        font-size: 14px;
+    }
+
+    /* Download and video links optimization */
+    .download-links a,
+    .video-links a {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    /* Mobile banner full width */
+    .banner {
+        margin: 10px 0;
+        border-radius: 6px;
+    }
+
+    /* Founders section mobile improvements */
+    .founders-section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .founder-note {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

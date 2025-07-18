@@ -1,0 +1,1132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>        
+
+
+
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> -->
+<meta content="mr" http-equiv="Content-Language">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="{KEYWORDS}" />
+
+<meta name="description" content="{DESCRIPTION}" />
+
+<meta name="author" content="{AUTHOR}" /> -->
+
+<title>à¤¹à¥‹à¤®</title>
+<script language="javascript" type="text/javascript" src="index_files/jquery_003.js"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script>
+<script language="javascript" type="text/javascript" src="index_files/search.js"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script>
+<script type="text/javascript" src="index_files/jquery.js"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script>
+<script type="text/javascript" src="index_files/jquery-1.htm"></script>
+<script type="text/javascript" src="index_files/jquery_002.js"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script>
+<script type="text/javascript" src="index_files/highslide-with-gallery.js"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script><script src="index_files/1.htm"></script>
+<link rel="stylesheet" type="text/css" href="index_files/highslide.css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+function getAlbum(val)
+{
+    //alert(val);
+	var url = '/cms/fancybox/example/result.php?album_id='+val;
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: ({           
+            query: val, search: 1
+		    }),
+        dataType:"html",
+        error: function (xhr, desc, exceptionobj) {
+        //alert(xhr.responseText);
+        },
+        success : function (json) { //alert(json);
+		   $('#SearchResult').html(json);
+		  		
+        },
+        complete: function () {
+			
+        }
+    });
+return false;
+}
+
+</script>
+<script type="text/javascript">
+	hs.graphicsDir = 'graphics/';
+	hs.align = 'center';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.outlineType = 'rounded-white';
+	hs.fadeInOut = true;
+	hs.numberPosition = 'caption';
+	hs.dimmingOpacity = 0.75;
+
+	// Add the controlbar
+	if (hs.addSlideshow) hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+		overlayOptions: {
+			opacity: .75,
+			position: 'bottom center',
+			hideOnMouseOut: true
+		}
+	});
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #f8f3d5;
+	background-image: url(/Template/site/bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+}
+
+.mainText
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;
+}
+-->
+</style>
+<link href="index_files/stylesheet.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.mainText1 {	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;
+}
+-->
+</style>
+<script src="index_files/1.htm"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 10"><meta name="Originator" content="Microsoft Word 10"><style type="text/css">.highslide img {cursor: url(graphics/zoomin.cur), pointer !important;}</style>
+</head><body>
+<table width="1000" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td width="3%">&nbsp;</td>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//logo/logo.jpg&quot;); background-repeat: no-repeat; background-position: center top; height: 135px;" valign="bottom" align="right"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td align="right"><table width="200" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td class="mainText1" valign="top" align="left" height="20"><script language="JavaScript" type="text/javascript">
+<!-- hide from old browsers
+  function GetDay(intDay){
+    var DayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", 
+                         "Thursday", "Friday", "Saturday")
+    return DayArray[intDay]
+    }
+
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December") 
+    return MonthArray[intMonth] 	  	 
+    }
+  function getDateStrWithDOW(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetDay(today.getDay()) + ", "
+    todayStr += GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+//-->
+            </script>
+                  <script language="JavaScript" type="text/javascript">
+<!-- hide from old browsers
+    document.write(getDateStrWithDOW())
+//-->
+              </script>Friday, September 3, 2010
+                  &nbsp;</td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td align="right">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right"><table width="20%" border="0" cellpadding="0" cellspacing="0">
+			
+              <tbody><tr>
+                <td>
+				<form name="form_Lang" method="post">
+				<input name="hidLangName" id="hidLangName" type="hidden">
+				<input name="imgBtnEng" id="imgBtnEng" src="index_files/marathi.jpg" width="20" type="image" height="12"></form></td>
+                <td class="mainText"><a href="javascript:fn_changeLang('marathi');" class="mainText"><strong>MARATHI</strong></a><a></a></td>
+                <td><input name="imgBtnDutch" id="imgBtnDutch" src="index_files/en_flag.jpg" width="20" type="image" height="12"></td>
+                <td class="mainText"><a href="javascript:fn_changeLang('english');" class="mainText"><strong>ENGLISH</strong></a><a>
+				</a></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td align="right">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right"><table width="80%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td width="22"><img src="index_files/link_left.jpg" width="22" height="41"></td>
+                <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//link_mid.jpg&quot;); background-repeat: repeat-x;"><table class="stylelinks" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                  
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Home.php/" class="link">à¤¹à¥‹à¤®</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Prizes.php/" class="link">à¤ªà¤¾à¤°à¤¿à¤¤à¥‹à¤·à¤¿à¤•à¥‡</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/scholarship.php/" class="link">à¤¶à¤¿à¤·à¥à¤¯à¤µà¥ƒà¤¤à¥à¤¯à¤¾</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/membership.php/" class="link">à¤¸à¤¦à¤¸à¥à¤¯ à¤µà¥à¤¹à¤¾!!</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Refunds.php/" class="link">à¤à¤šà¥à¤›à¤¿à¤• à¤ªà¤°à¤¤à¤«à¥‡à¤¡</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/Contact.php/" class="link">à¤¸à¤‚à¤ªà¤°à¥à¤•</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/balance-sheet.php/" class="link">à¤¤à¤¾à¤³à¥‡à¤¬à¤‚à¤¦</a></td>
+                    
+                    <td class="link" align="center"><a href="http://kdgb-vidhyavriddhisamaj.com/History.php/" class="link">à¤‡à¤¤à¤¿à¤¹à¤¾à¤¸</a></td>
+                    
+                    </tr>
+                </tbody></table></td>
+                <td width="22"><img src="index_files/link_right.jpg" width="22" height="41"></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td align="right"><img src="index_files/banner.jpg" width="928" height="277"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="928" align="right" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td style="border: 1px solid rgb(248, 226, 150);" bgcolor="#fffff7"><table width="96%" align="center" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td class="text" valign="top" width="65%"><div id="SearchResult"><p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"></p>
+<!--[if gte mso 9]><xml>
+
+<w:WordDocument>
+
+<w:View>Normal</w:View>
+
+<w:Zoom>0</w:Zoom>
+
+<w:Compatibility>
+
+<w:BreakWrappedTables />
+
+<w:SnapToGridInCell />
+
+<w:ApplyBreakingRules />
+
+<w:WrapTextWithPunct />
+
+<w:UseAsianBreakRules />
+
+</w:Compatibility>
+
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+</w:WordDocument>
+
+</xml><![endif]-->
+<p><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:3;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-bidi-font-family:"Trebuchet MS";
+	font-weight:normal;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1292591731;
+	mso-list-template-ids:1086899536;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style></p>
+<!--[if gte mso 10]>
+
+<style>
+
+/* Style Definitions */
+
+table.MsoNormalTable
+
+{mso-style-name:"Table Normal";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+mso-style-noshow:yes;
+
+mso-style-parent:"";
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:widow-orphan;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+table.MsoTableGrid
+
+{mso-style-name:"Table Grid";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+border:solid windowtext 1.0pt;
+
+mso-border-alt:solid windowtext .5pt;
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-border-insideh:.5pt solid windowtext;
+
+mso-border-insidev:.5pt solid windowtext;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:none;
+
+mso-layout-grid-align:none;
+
+text-autospace:none;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+</style>
+
+<![endif]-->
+<p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><b></b><b></b></p>
+<!--[if gte mso 9]><xml>
+
+<w:WordDocument>
+
+<w:View>Normal</w:View>
+
+<w:Zoom>0</w:Zoom>
+
+<w:Compatibility>
+
+<w:BreakWrappedTables />
+
+<w:SnapToGridInCell />
+
+<w:ApplyBreakingRules />
+
+<w:WrapTextWithPunct />
+
+<w:UseAsianBreakRules />
+
+</w:Compatibility>
+
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+</w:WordDocument>
+
+</xml><![endif]-->  <!--[if gte mso 10]>
+
+<style>
+
+/* Style Definitions */
+
+table.MsoNormalTable
+
+{mso-style-name:"Table Normal";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+mso-style-noshow:yes;
+
+mso-style-parent:"";
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:widow-orphan;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+table.MsoTableGrid
+
+{mso-style-name:"Table Grid";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+border:solid windowtext 1.0pt;
+
+mso-border-alt:solid windowtext .5pt;
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-border-insideh:.5pt solid windowtext;
+
+mso-border-insidev:.5pt solid windowtext;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:none;
+
+mso-layout-grid-align:none;
+
+text-autospace:none;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+</style>
+
+<![endif]-->
+<h3><b><span style="font-size: 14pt; color: red;"><span style="">&nbsp;&nbsp;&nbsp; </span></span></b></h3>
+<p>अध्यक्ष &nbsp; श्री. &nbsp; दत्तात्रय &nbsp; सखाराम &nbsp; आजगां वक </p>
+<p>अध्यक्ष &nbsp; श्री. &nbsp; दत्तात्रय &nbsp; सखाराम &nbsp; आजगां वक </p>
+<h3><b><span style="font-size: 14pt; color: red;"><o:p></o:p></span></b></h3>
+<table class="MsoTableGrid" style="border: medium none; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr style="">
+            <td colspan="2" style="border: medium none; padding: 0in 5.4pt; width: 419.4pt;" valign="top" width="559">
+            <p style="text-align: center;" align="center"><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤¸à¤‚à¤¸à¥à¤¥à¥‡à¤šà¥‡</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤ªà¤¦à¤¾à¤§à¤¿à¤•à¤¾à¤°à¥€</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤†à¤£à¤¿</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤•à¤¾à¤°à¥à¤¯à¤•à¤¾<wbr>à¤°à¥€</span></b><b><span style="font-size: 13.5pt;">&nbsp; </span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤®à¤‚à¤¡à¤³</span></b><b><span style="font-size: 13.5pt;" lang="HI"> </span></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span></b><b><span style="font-size: 13.5pt;">&nbsp;</span></b><b><span style="font-size: 18pt;">(2009-10)</span></b><o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border: 1pt solid windowtext; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤ªà¤¦à¤¾à¤§à¤¿à¤•à¤¾à¤°à¥€ </span></i></b><b><i><span style="font-size: 13.5pt;"><o:p></o:p></span></i></b></p>
+            </td>
+            <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤¸à¤‚à¤ªà¤°à¥à¤•<o:p></o:p></span></i></b></p>
+            </td>
+        </tr>
+        <tr style="height: 22.9pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 22.9pt;" valign="top" width="439">
+            <ol start="1" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤…à¤§à¥à¤¯à¤•à¥à¤·</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€.</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¤¤à¥à¤¤à¤¾à¤¤à¥à¤°à¤¯</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤–à¤¾à¤°à¤¾à¤®</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤†à¤œà¤—à¤¾à¤‚<wbr>à¤µà¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 22.9pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-   à¥¨à¥©à¥®à¥¬à¥¬à¥©à¥ªà¥§<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 19.75pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 19.75pt;" valign="top" width="439">
+            <ol start="2" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤‰à¤ªà¤¾à¤§à¥à¤¯à¤•à¥à¤·</span><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¡à¥‰</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤°à¤µà¤¿à¤¨à¥à¤¦à¥à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¬à¤¾à¤¬à¥<wbr>à¤°à¤¾à¤µ</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¤à¤¿à¤°à¥‹à¤¡à¤¼à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 19.75pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥©à¥ªà¥«à¥­à¥®à¥¦</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 3.5pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 3.5pt;" valign="top" width="439">
+            <ol start="3" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤‰à¤ªà¤¾à¤§à¥à¤¯à¤•à¥à¤·</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¡à¥‰ à¤•à¤®à¤²à¤¾à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¤¿à¤¨à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¥‡à¤¸à¤¾à¤ˆ</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+      &nbsp;&nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 3.5pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥­à¥¨à¥«à¥¯à¥¨à¥¨</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="4" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¿à¤¶à¥à¤µà¤¸à¥à¤¤</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤…à¤¨à¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤®à¤¹à¤¾à¤¦à¥‡à¤µ à¤ªà¤°à¥à¤³à¥‡à¤•à¤°</span><span style="font-size: 10pt;">&nbsp; (</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¾à¤ªà¤• à¤®à¤‚à¤¡à¤³ à¤¸à¤­à¤¾à¤¸à¤¦ ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¨à¥ªà¥ªà¥¬à¥©à¥¯à¥¯<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="5" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¿à¤¶à¥à¤µà¤¸à¥à¤¤</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤­à¤¾à¤²à¤šà¤‚à¤¦à¥à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤°à¤¾à¤œà¤¾à¤°à¤¾à¤®</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¾à¤®à¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-   à¥¨à¥©à¥®à¥«à¥­à¥§à¥¬à¥§<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="6" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¿à¤¶à¥à¤µà¤¸à¥à¤¤</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€à¤ªà¤¾à¤¦ à¤¬à¤¾à¤³à¤•à¥ƒà¤·à¥à¤£</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤ªà¤¾à¤Ÿà¥€à¤²</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¨à¥ªà¥¨à¥¨à¥­à¥­à¥§<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p class="MsoNormal" style="margin-left: 0.25in;"><span style="font-size: 10pt;">7.&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤–à¤œà¤¿à¤¨à¤¦à¤¾à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€</span><span style="font-size: 10pt;" lang="HI"> </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤°à¤¤à¥à¤¨à¤¾à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¾à¤¸à¥à¤¦à¥‡à¤µ</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¾à¤²à¤¾à¤µà¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;(</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¾à¤ªà¤• à¤®à¤‚à¤¡à¤³ à¤¸à¤­à¤¾à¤¸à¤¦ ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp; <wbr>&nbsp; &nbsp; &nbsp; <o:p></o:p></span></p>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¬à¥ªà¥¨à¥¦à¥ªà¥§à¥§</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 7.15pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 7.15pt;" valign="top" width="439">
+            <ol start="7" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤šà¤¿à¤Ÿà¤£à¥€à¤¸ à¤¶à¥à¤°à¥€ à¤¸à¥à¤§à¤¾à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤–à¤¾à¤°à¤¾à¤® à¤ªà¤¾à¤Ÿà¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 7.15pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥©à¥®à¥¬à¥¦à¥®à¥­à¥¬</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 13pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 13pt;" valign="top" width="439">
+            <ol start="8" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤šà¤¿à¤Ÿà¤£à¥€à¤¸ à¤¶à¥à¤°à¥€ à¤•à¤¿à¤°à¤£</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¤¤à¥à¤¤à¤¾à¤¤à¥à¤°à¤¯ à¤¸à¤¾à¤®à¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;        (</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¾à¤ªà¤• à¤®à¤‚à¤¡à¤³ à¤¸à¤­à¤¾à¤¸à¤¦ ) </span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 13pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥©à¥¦à¥®à¥¯à¥¬à¥®à¥¦<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 3.5pt;">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt; height: 3.5pt;" valign="top" width="439">
+            <ol start="9" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤šà¤¿à¤Ÿà¤£à¥€à¤¸ à¤¶à¥à¤°à¥€ à¤¨à¤°à¤¸à¤¿à¤‚à¤¹</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¨à¤¾à¤°à¤¾à¤¯à¤£</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤ªà¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¤¾à¤²à¤¾à¤µà¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in; height: 3.5pt;" valign="top" width="120">
+            <p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥«à¥§-à¥¨à¥ªà¥¦à¥©à¥®à¥­à¥§</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><o:p>&nbsp;</o:p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+
+<w:WordDocument>
+
+<w:View>Normal</w:View>
+
+<w:Zoom>0</w:Zoom>
+
+<w:Compatibility>
+
+<w:BreakWrappedTables />
+
+<w:SnapToGridInCell />
+
+<w:ApplyBreakingRules />
+
+<w:WrapTextWithPunct />
+
+<w:UseAsianBreakRules />
+
+</w:Compatibility>
+
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+</w:WordDocument>
+
+</xml><![endif]--><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:589970014;
+	mso-list-template-ids:-756353100;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]>
+
+<style>
+
+/* Style Definitions */
+
+table.MsoNormalTable
+
+{mso-style-name:"Table Normal";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+mso-style-noshow:yes;
+
+mso-style-parent:"";
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:widow-orphan;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+table.MsoTableGrid
+
+{mso-style-name:"Table Grid";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+border:solid windowtext 1.0pt;
+
+mso-border-alt:solid windowtext .5pt;
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-border-insideh:.5pt solid windowtext;
+
+mso-border-insidev:.5pt solid windowtext;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:none;
+
+mso-layout-grid-align:none;
+
+text-autospace:none;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+</style>
+
+<![endif]-->
+</p><table class="MsoTableGrid" style="border: medium none; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr style="">
+            <td style="border: 1pt solid windowtext; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <p><b><i><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤•à¤¾à¤°à¥à¤¯à¤•à¤¾à¤°à¥€ à¤®à¤‚à¤¡à¤³</span></i></b><b><i><span style="font-size: 13.5pt;" lang="HI">   </span></i></b><b><i><span style="font-size: 13.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></i></b><i><o:p></o:p></i></p>
+            </td>
+            <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><b><i><span style="font-size: 13.5pt;">&nbsp;&nbsp; </span></i></b><b><span style="font-size: 13.5pt; font-family: Mangal;" lang="HI">à¤¸à¤‚à¤ªà¤°à¥à¤•</span></b><o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="1" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤¸à¥à¤‚à¤¦à¤° à¤°à¤¾à¤®à¤•à¥ƒà¤·à¥à¤£        à¤¸à¤¾à¤®à¤‚à¤¤ à¤¨à¥‡à¤µà¤¾à¤³à¤•à¤° </span><span style="font-size: 10pt;">&nbsp;- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤šà¥‡à¤…à¤°à¤®à¤¨</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨- à¥¨à¥®à¥­à¥¨à¥¨à¥¦à¥¨à¥¨</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="2" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¡à¥‰ à¤…à¤œà¤¯</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¤¿à¤—à¤‚à¤¬à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤ªà¤¾à¤Ÿà¥€à¤²</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;        &nbsp;&nbsp;- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤µà¥à¤¹à¤¾à¤‡à¤¸ à¤šà¥‡à¤…à¤°à¤®à¤¨</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¬à¥®à¥©à¥ªà¥ªà¥¬à¥¦</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="3" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤¶à¤¶à¥€à¤•à¤¾à¤‚à¤¤ à¤¤à¥à¤•à¤¾à¤°à¤¾à¤®</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¬à¤¾à¤‚à¤¬à¤¾à¤°à¥à¤¡à¥‡à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-&nbsp;        </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¬à¥ªà¥¦à¥§à¥¯à¥­à¥­</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="4" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€        à¤¬à¤¾à¤³à¤•à¥ƒà¤·à¥à¤£ à¤¶à¥à¤°à¥€à¤¨à¤¿à¤µà¤¾à¤¸ à¤ªà¤¾à¤Ÿà¥€à¤²</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp; <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥­à¥©à¥­à¥¯à¥¦à¥®</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="5" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¥Œ        à¤¸à¥à¤¨à¤¿à¤¤à¤¾ à¤®à¤¨à¥‹à¤¹à¤° à¤†à¤œà¤—à¤¾à¤µà¤•à¤°</span><span style="font-size: 10pt;">&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥¦à¥«à¥®à¥®à¥¯à¥ª</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="6" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤ªà¥à¤°à¥‹</span><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤œà¤—à¤¦à¤¿à¤¶ à¤¸à¤¾à¤¬à¤¾à¤œà¥€ à¤µà¤¾à¤²à¤¾à¤µà¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; - </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥­à¥®à¥­à¥«à¥«à¥©</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="7" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤¦à¤¿à¤—à¤‚à¤¬à¤° à¤—à¤£à¥‡à¤¶</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¾à¤®à¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp;&nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥¬à¥®à¥ªà¥¨à¥«à¥­à¥¦</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="8" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€        à¤…à¤¨à¤‚à¤¤ à¤œà¤¨à¤¾à¤°à¥à¤¦à¤¨</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¤à¥‡à¤‚à¤¡à¥à¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp; <span style="">&nbsp;</span><wbr>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp;        &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥­à¥­à¥¦à¥¯à¥¨à¥®à¥§</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="9" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp; </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤°à¤¤à¥à¤¨à¤¾à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤ªà¥à¤°à¤­à¤¾à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¤à¥‡à¤‚à¤¡à¥‹à¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;        &nbsp; &nbsp; -</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
+     &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥ªà¥¨à¥¨à¥ªà¥ªà¥¦à¥«</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="10" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€        à¤®à¤¨à¥€à¤·</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤—à¥à¤°à¥à¤¦à¤¾à¤¸</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¦à¤¾à¤­à¥‹à¤²à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;        <span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥­à¥«à¥§à¥§à¥©à¥¬</span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="11" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt;">&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¥Œ        à¤¸à¥à¤¹à¤¾à¤¸à¤¿à¤¨à¥€</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤­à¤¾à¤¸à¥à¤•à¤°</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¾à¤®à¤‚à¤¤</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;<span style="">&nbsp; </span><span style="">&nbsp;</span>- </span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨</span><span style="font-size: 10pt;">-<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="">
+            <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 329.4pt;" valign="top" width="439">
+            <ol start="12" type="1">
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€ à¤°à¤®à¥‡à¤¶</span><span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¶à¥à¤°à¥€à¤ªà¤¾à¤¦ à¤¦à¥‡à¤¸à¤¾à¤ˆ</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <span style="">&nbsp;</span>-</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¤¦à¤¸à¥à¤¯</span><span style="font-size: 10pt;">&nbsp;(</span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¤¸à¥à¤µà¥€à¤•à¥ƒ<wbr>à¤¤)</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></li>
+            </ol>
+            </td>
+            <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 1.25in;" valign="top" width="120">
+            <p><span style="font-size: 10pt;"><span style="">&nbsp;</span></span><span style="font-size: 10pt; font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥®à¥¯à¥­à¥¬à¥®à¥¨à¥®</span><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+<p>
+
+
+
+
+<link rel="File-List" href="file:///D:%5CDOCUME%7E1%5CGOTYA%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C03%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>
+
+<w:WordDocument>
+
+<w:View>Normal</w:View>
+
+<w:Zoom>0</w:Zoom>
+
+<w:Compatibility>
+
+<w:BreakWrappedTables />
+
+<w:SnapToGridInCell />
+
+<w:ApplyBreakingRules />
+
+<w:WrapTextWithPunct />
+
+<w:UseAsianBreakRules />
+
+</w:Compatibility>
+
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+</w:WordDocument>
+
+</xml><![endif]--><style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:32768 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Trebuchet MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Trebuchet MS";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style><!--[if gte mso 10]>
+
+<style>
+
+/* Style Definitions */
+
+table.MsoNormalTable
+
+{mso-style-name:"Table Normal";
+
+mso-tstyle-rowband-size:0;
+
+mso-tstyle-colband-size:0;
+
+mso-style-noshow:yes;
+
+mso-style-parent:"";
+
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+mso-para-margin:0in;
+
+mso-para-margin-bottom:.0001pt;
+
+mso-pagination:widow-orphan;
+
+font-size:10.0pt;
+
+font-family:"Times New Roman";}
+
+</style>
+
+<![endif]--></p>
+<p><span style="font-size: small;">&nbsp; <span style="font-family: Mangal;" lang="HI">à¤²à¥‡à¤–à¤¨à¤¿à¤•</span>&nbsp;&nbsp;&nbsp; <span style="font-family: Mangal;" lang="HI">à¤¸à¥Œ. à¤…à¤‚à¤œà¤²à¥€ à¤…à¤œà¤¿à¤¤ à¤®à¤¾à¤¤à¥‹à¤‚à¤¡à¤•à¤°</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"> <span style="font-family: Mangal;" lang="HI">à¥¦à¥¨à¥¨-à¥¨à¥©à¥®à¥¨ à¥§à¥¬à¥­à¥«</span> </span>&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <o:p></o:p></p></div></td>
+                <td style="background-image: url(&quot;http://kdgb-vidhyavriddhisamaj.com/Template/site/images//line_bg.jpg&quot;); background-repeat: repeat-y; background-position: center center; padding-bottom: 10px; padding-top: 10px;" valign="top" width="2%">&nbsp;</td>
+                <td valign="top"><table width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td valign="bottom" bgcolor="#fffff7" height="45"><img src="index_files/news.jpg" width="262" height="31"></td>
+                  </tr>
+                  <tr>
+                    <td><marquee direction="up" scrolldelay="200" onmouseover="this.stop();" onmouseout="this.start();" width="260" height="158"><p class="text">à¥§.
+ à¤µà¤¿à¤µà¤¿à¤§ à¤ªà¤°à¥€à¤•à¥à¤·à¤¾à¤‚à¤¤ à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¥‡à¤¸à¤¹ à¤‰à¤¤à¥à¤¤à¥€à¤°à¥à¤£ à¤à¤¾à¤²à¥‡à¤²à¥à¤¯à¤¾ à¤†à¤ªà¤²à¥à¤¯à¤¾ à¤œà¤¾à¤¤à¥€à¤¤à¥€à¤² à¤—à¥à¤£à¤µà¤‚à¤¤ 
+à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤°à¥à¤¥à¥à¤¯à¤¾à¤‚à¤¸ à¤ªà¤¾à¤°à¤¿à¤¤à¥‹à¤·à¤¿à¤•à¥‡ à¤¦à¥‡à¤Šà¤¨ à¤¤à¥à¤¯à¤¾à¤‚à¤šà¥‡ à¤•à¥Œà¤¤à¥à¤• à¤•à¤°à¤£à¥à¤¯à¤¾à¤šà¤¾  à¤¸à¤®à¤¾à¤°à¤‚à¤­ - "à¤•à¥Œà¤¤à¥à¤• 
+à¤¸à¥‹à¤¹à¤³à¤¾" - à¤ªà¥à¤°à¤¤à¤¿à¤µà¤°à¥à¤·à¥€ à¤¸à¤‚à¤¸à¥à¤¥à¥‡à¤¤à¤°à¥à¤«à¥‡ à¤†à¤¯à¥‹à¤œà¤¿à¤¤ à¤•à¤°à¤£à¥à¤¯à¤¾à¤¤ à¤¯à¥‡à¤¤à¥‹. à¤¯à¤¾ à¤µà¤°à¥à¤·à¥€ à¤…à¤¶à¤¾ 
+à¤ªà¤¾à¤°à¤¿à¤¤à¥‹à¤·à¤¿à¤•à¤¾à¤‚à¤¸à¤¾à¤ à¥€ à¤¸à¤‚à¤¸à¥à¤¥à¥‡à¤•à¤¡à¥‡ à¤…à¤°à¥à¤œ à¤•à¤°à¤¾à¤¯à¤šà¥€ à¤…à¤‚à¤¤à¤¿à¤® à¤®à¥à¤¦à¤¤ à¥©à¥§ à¤‘à¤—à¤¸à¥à¤Ÿ 2010
+ </p>
+					<!-- <p class="text">à¥¨.  à¤¤à¥à¤¯à¤¾à¤¨à¤‚à¤¤à¤° à¤à¤¾à¤²à¥‡à¤²à¥à¤¯à¤¾ à¤•à¤¾à¤°à¥à¤¯à¤•à¤¾à¤°à¥€ à¤®à¤‚à¤¡à¤³à¤¾à¤šà¥à¤¯à¤¾ à¤¸à¤­à¥‡à¤¤ à¤¶à¥à¤°à¥€ à¤¸à¥à¤‚à¤¦à¤° à¤°à¤¾à¤®à¤•à¥ƒà¤·à¥à¤£ à¤¸à¤¾à¤®à¤‚à¤¤ à¤¨à¥‡à¤µà¤¾à¤³à¤•à¤° à¤µ à¤ªà¥à¤°à¥‹ à¤…à¤œà¤¯ à¤¦à¤¿à¤—à¤‚à¤¬à¤° à¤ªà¤¾à¤Ÿà¥€à¤² à¤¯à¤¾à¤‚à¤šà¥€  à¤…à¤¨à¥à¤•à¥à¤°à¤®à¥‡ à¤šà¥‡à¤…à¤°à¤®à¤¨ à¤†à¤£à¤¿ à¤µà¥à¤¹à¤¾ .à¤šà¥‡à¤…à¤°à¤®à¤¨ à¤ªà¤¦à¥€ à¤¨à¤¿à¤µà¤¡ à¤à¤¾à¤²à¥€.à¤•à¤¾à¤°à¥à¤¯à¤•à¤¾à¤°à¥€ à¤®à¤‚à¤¡à¤³à¤¾à¤µà¤° à¤šà¤¿à¤Ÿà¤£à¥€à¤¸à¤¾à¤šà¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤¨à¤¿à¤§à¥€ à¤®à¥à¤¹à¤£à¥‚à¤¨ à¤¶à¥à¤°à¥€ à¤•à¤¿à¤°à¤£ à¤¦à¤¤à¥à¤¤à¤¾à¤¤à¥à¤°à¤¯ à¤¸à¤¾à¤®à¤‚à¤¤ à¤†à¤£à¤¿ à¤µà¤¿à¤¶à¥à¤µà¤¸à¥à¤¤ à¤ªà¥à¤°à¤¤à¤¿à¤¨à¤¿à¤§à¥€ à¤®à¥à¤¹à¤£à¥‚à¤¨ à¤¶à¥à¤°à¥€. à¤­à¤¾à¤²à¤šà¤‚à¤¦à¥à¤° à¤°à¤¾à¤œà¤¾à¤°à¤¾à¤® à¤¸à¤¾à¤®à¤‚à¤¤ à¤¯à¤¾à¤šà¥€ à¤¨à¤¿à¤µà¤¡ à¤•à¤°à¤£à¥à¤¯à¤¾à¤¤ à¤†à¤²à¥€.</p>
+
+					<p class="text">à¥©. à¤¸à¤‚à¤¸à¥à¤¥à¥‡à¤šà¥à¤¯à¤¾ à¤µà¤¤à¥€à¤¨à¥‡ à¤ªà¤¾à¤°à¤¿à¤¤à¥‹à¤·à¤¿à¤• à¤µà¤¿à¤¤à¤°à¤£ à¤¸à¤®à¤¾à¤°à¤­ à¥¨.à¥§à¥¦.à¥¨à¥¦à¥¦à¥¯ à¤°à¥‹à¤œà¥€ à¤¸à¤‚à¤ªà¤¨à¥à¤¨ à¤à¤¾à¤²à¤¾.</p> -->
+					<p class="text">à¥¨. à¤¸à¤¨ à¥¨à¥¦à¥¦à¥¯.à¥§à¥¦ à¤°à¤¾ à¤µà¤°à¥à¤·à¤¾à¤•à¤°à¤¿à¤¤à¤¾ à¤à¤•à¥‚à¤£ à¥«à¥ªà¥¦ à¤®à¥à¤²à¤¾à¤‚à¤¨à¤¾ à¤°à¥à¤ªà¤¯à¥‡ à¥§à¥¦.à¥¦à¥¦ à¤²à¤¾à¤– à¤¶à¤¿à¤·à¥à¤¯à¤µà¥ƒà¤¤à¥à¤¤à¥€ à¤µà¤¾à¤Ÿà¤£à¥à¤¯à¤¾à¤¤ à¤†à¤²à¥€.</p><p class="text">à¥©. à¤¸à¤¨ à¥¨à¥¦à¥§à¥¦-à¥§à¥§ à¤¸à¤¾à¤²à¤¾à¤•à¤°à¤¿à¤¤à¤¾ à¤¶à¤¿à¤·à¥à¤¯à¤µà¥ƒà¤¤à¥à¤¤à¥€à¤šà¥‡ à¤…à¤°à¥à¤œ à¤¸à¥à¤µà¥€à¤•à¤¾à¤°à¤£à¥à¤¯à¤¾à¤šà¥€ à¤…à¤‚à¤¤à¤¿à¤® à¤¤à¤¾à¤°à¥€à¤– à¥©à¥§ à¤œà¥à¤²à¥ˆ à¥¨à¥¦à¥§à¥¦</p></marquee></td> 
+					
+					
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="read_more"><img src="index_files/photo.jpg" width="262" height="31"></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <tbody><tr>
+                        <td width="45%"><img src="index_files/im_1.jpg" width="119" height="80"></td>
+                        <td width="10%" align="center">&nbsp;</td>
+                        <td width="45%"><img src="index_files/im_1.jpg" width="119" height="80"></td>
+                      </tr>
+                    </tbody></table></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="read_more" align="right"><a href="http://kdgb-vidhyavriddhisamaj.com/Gallery.php/"><strong>View More...</strong></a><a></a></td>
+                  </tr>
+                </tbody></table><p>Download Forms:</p>
+				<p style="color: red;"><a href="http://www.kdgb-vidhyavriddhisamaj.com/forms.html" style="color: red;" target="_blank"> DOWNLOAD ALL FORMS </a></p></td>
+                
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr></tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="read_more" align="center">Copyright Ãƒâ€šÃ‚Â© 2009 <strong>KDGB vidhyavriddhi samaj</strong> All rights reserved.</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <!-- <td width="3%">&nbsp;</td> -->
+  </tr>
+</tbody></table>
+<div id="fancy_overlay"></div><div id="fancy_wrap"><div class="fancy_loading" id="fancy_loading"><div></div></div><div id="fancy_outer"><div id="fancy_inner"><div id="fancy_close"></div><div id="fancy_bg"><div class="fancy_bg fancy_bg_n"></div><div class="fancy_bg fancy_bg_ne"></div><div class="fancy_bg fancy_bg_e"></div><div class="fancy_bg fancy_bg_se"></div><div class="fancy_bg fancy_bg_s"></div><div class="fancy_bg fancy_bg_sw"></div><div class="fancy_bg fancy_bg_w"></div><div class="fancy_bg fancy_bg_nw"></div></div><a href="javascript:;" id="fancy_left"><span class="fancy_ico" id="fancy_left_ico"></span></a><a href="javascript:;" id="fancy_right"><span class="fancy_ico" id="fancy_right_ico"></span></a><div id="fancy_content"></div><div id="fancy_title"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="fancy_title" id="fancy_title_left"></td><td class="fancy_title" id="fancy_title_main"><div></div></td><td class="fancy_title" id="fancy_title_right"></td></tr></tbody></table></div></div></div></div><div style="padding: 0pt; border: medium none; margin: 0pt; position: absolute; left: 0pt; top: 0pt; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" href="javascript:;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><table style="padding: 0pt; border: medium none; margin: 0pt; visibility: hidden; position: absolute; border-collapse: collapse; width: 0pt;" cellspacing="0"><tbody style="padding: 0pt; border: medium none; margin: 0pt;"><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td class="rounded-white highslide-outline" style="padding: 0pt; border: medium none; margin: 0pt; position: relative;"></td>
+<td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt;"></td></tr></tbody></table></div></body></html>
